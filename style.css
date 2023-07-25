@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Titulo */
+.header__title{
+    font-size: 3.5rem;
+}
+@media (min-width: 768px) {
+    .header__title{
+    font-size: 4rem;
+
+    }
+}
+.span__title--f1{
+    color: red;
+}
+
+/* navegacion  */
+.header__nav{
+    font-size: 1.8rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header__nav{
+        flex-direction: row;
+        font-size: 2.8rem;
+
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.header__container--img{
+    margin: 0 2rem; /* Aquí establecemos el margen deseado de 2 rem en cada lado */
+    max-width: calc(100% - 4rem); /* Restamos el doble del margen para que el ancho sea el de la página menos los 2 rem de cada lado */
+    display: flex;
+    justify-content: center; /* Para centrar la imagen horizontalmente si es más pequeña que el ancho máximo */
+}
+
+.header__img{
+   max-width:100%;
+   background-color: black;
+   padding: 2rem;
+}
+img{
+    width: 100%;
+    padding: 2rem;
+} 
+
+.main{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Caledario*/
+
+
+/*Title*/
+.main__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main__h2{
+    font-size:2rem ;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+/*Cards*/
+
+.container__card{
+    display: flex;
+    flex-direction: column
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.card__text {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card__text h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card__text p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.card__text--lastWinner {
+    padding: 10px;
+}
+
+.card__text--lastWinner p {
+    margin: 5px 0;
+    color: #444;
+}
+
+
+.container__main{
+    display: flex;
+    flex-direction: row;
+}
