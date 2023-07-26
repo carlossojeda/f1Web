@@ -62,7 +62,7 @@ a{
 }
 img{
     width: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
 } 
 
 .main{
@@ -125,11 +125,13 @@ img{
     text-align: center;
 }
 .card__title {
+    /* color: #f0f0f0; */
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 3px;
     text-align: center;
     background-color: rgb(209, 53, 53)
+    /* background-color: #857d7d; */
 }
 .container__card p:last-child{
     grid-column: 3 / 1 ;
@@ -164,4 +166,10 @@ img{
 .container__main{
     display: flex;
     flex-direction: row;
+}
+
+.card__image{
+    /* align-items: center;
+    justify-content: center; */
+    max-width: 100%;
 }
