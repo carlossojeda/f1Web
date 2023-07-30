@@ -1,7 +1,24 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0
 }
+
+
+
+.activo {
+    background-color: red;
+    padding: .5rem;
+    border-radius: 2rem;
+
+}
+a:hover{
+    background-color: red;
+    padding: .5rem;
+    border-radius: 2rem;
+
+}
+
 .header{
     display:flex;
     flex-direction: column;
@@ -173,3 +190,113 @@ img{
     justify-content: center; */
     max-width: 100%;
 }
+
+
+
+/*TAbla*/
+
+.tabla-clasificacion {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.tabla-clasificacion th,
+.tabla-clasificacion td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla-clasificacion th {
+  background-color: #f0f0f0;
+}
+
+.tabla-clasificacion tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.tabla-clasificacion tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+/*CARDS tabla*/
+
+
+.podio-container{
+    max-width: 90%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podio {
+  display: flex;
+  flex-direction: row;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.tarjeta--primero {
+  background-color: #0600ef; /* Color de Red Bull */
+  color: #fff; /* Texto en color blanco */
+  margin-right: 20px;
+}
+
+.tarjeta--segundo {
+  background-color: #0600ef; /* Color de Red Bull */
+  color: #fff; /* Texto en color blanco */
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.tarjeta--tercero {
+  background-color: #5b9f35; /* Color de Aston Martin */
+  color: #fff; /* Texto en color blanco */
+  margin-top: 60px;
+}
+
+
+/*Ventana Emergente*/
+
+/* Estilos para la ventana emergente */
+.ventana-emergente {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contenido-ventana {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  pointer-events: auto;
+  width: 500px;
+  height: 300px;
+}
+
+/* Estilos para resaltar la tarjeta activa */
+.tarjeta--activo {
+  background-color: yellow;
+}
+
