@@ -1,303 +1,147 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 
 
+/*NAV*/
 
-.activo {
-    background-color: red;
-    padding: .5rem;
-    border-radius: 2rem;
-
-}
-a:hover{
-    background-color: red;
-    padding: .5rem;
-    border-radius: 2rem;
-
-}
-
-.header{
-    display:flex;
-    flex-direction: column;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-/*Titulo */
-.header__title{
-    font-size: 3.5rem;
+.nav__cel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
     text-align: center;
-    justify-content: center;
-}
-@media (min-width: 768px) {
-    .header__title{
-    font-size: 4rem;
-
-    }
-}
-.span__title--f1{
-    color: red;
-}
-
-/* navegacion  */
-.header__nav{
-    font-size: 1.8rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    padding: .5rem;
+    background-color: #e9e9e9;
+    height: 55px;
+}
+.boton__menu{
+    margin-left: 8rem;
 }
 
+.nav__container{
+    display: none;
+}
 @media (min-width: 768px) {
-    .header__nav{
+    .nav__container{
+        background-color: aqua;
+        max-width: 100%;
+        display: flex;
         flex-direction: row;
-        font-size: 2.8rem;
-
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    .nav__cel{
+        display: none;
     }
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-.header__container--img{
-    margin: 0 2rem; /* Aquí establecemos el margen deseado de 2 rem en cada lado */
-    max-width: calc(100% - 4rem); /* Restamos el doble del margen para que el ancho sea el de la página menos los 2 rem de cada lado */
-    display: flex;
-    justify-content: center; /* Para centrar la imagen horizontalmente si es más pequeña que el ancho máximo */
+
+/*MAIN*/
+
+/*BACKGROUND*/
+
+.main__img{
+    /* max-width: 606px; */
+    max-width: 100%;
+    height: 949px;
+    position: relative;
+
 }
 
-.header__img{
-   max-width:100%;
-   background-color: black;
-   padding: 2rem;
-}
-img{
-    width: 100%;
-    /* padding: 2rem; */
-} 
-
-.main{
-    margin-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    text-align: center;
     justify-content: center;
-}
-
-
-/*Caledario*/
-
-
-/*Title*/
-.main__container{
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    align-content: center;
+    margin: 0;
     padding: 2rem;
-}
-
-.main__h2{
-    font-size:2rem ;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-
-/*Cards*/
-
-.container__card{
+    background-color: #d1d1d1;
+    color: #ffe500;
+    font-size: 46px;
+    height: 211px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+
+
 }
-.card {
-    border: 2px solid red;
-    border-radius: 8px;
-    margin: 20px;
-    max-width: 400px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.main__h2 {
     text-align: center;
+    max-height: 100%;
+    
 }
 
 
-.card__text {
-    background-color: #f0f0f0;
-    padding: 10px;
-    gap: 2rem;
+/*CARD*/
+
+.bg{
+    height: 666;
+    width: 430;
+    background-image: url(/src/bg__blur.jpeg);
+    padding: .8rem;
+    background-size: cover;
+}
+
+.bg1{
+    height: 666;
+    width: 430;
+    background-image: url(/src/R-modified.jpeg);
+    padding: .8rem;
+    background-size: cover;
+}
+
+
+
+.main__card{
+    text-align: center;
+    max-width: 100%;
+    height: 625px;
+    border: 4px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgba(254, 251, 251, 40%); 
+    margin-bottom: 2rem;
+}
+.card__img{
+    max-width: 100%;
+}
+
+.main__card_horarios-grid{
     display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 40px;
+    background-color: #871414;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    max-width: 100%;
-    word-wrap: break-word;
-    text-align: center;
 }
-.card__title {
-    /* color: #f0f0f0; */
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 3px;
-    text-align: center;
-    background-color: rgb(209, 53, 53)
-    /* background-color: #857d7d; */
+.main__card__flex5{
+    grid-column: 1 / 3;
 }
-.container__card p:last-child{
-    grid-column: 3 / 1 ;
-    align-items: center;
-}
-.raceday{
-    display: flex;
-    flex-direction: column;
-}
-.card__text h2 {
-    margin: 0;
-    gap: 2rem;
+
+
+.circuito-font{
+    font-family: 'Inter', 'sans serif';
+    font-weight: 800;
     font-size: 24px;
-    color: #333;
 }
 
-.card__text p {
-    margin: 0;
-    color: #666;
+.horario-font{
+    font-family: 'Inter', 'sans serif';
+    font-weight: 800;
+    font-size: 24px;
+
 }
-
-.card__text--lastWinner {
-    padding: 10px;
+.evento--font{
+    font-family: 'Inter', 'sans serif';
+    font-size: 16px;
+    font-weight: 700;
 }
-
-.card__text--lastWinner p {
-    margin: 5px 0;
-    color: #444;
+.horario--color{
+    color: #ffffff;
+    font-family: 'Inter', 'sans serif';
+    font-weight: 700;
 }
-
-
-.container__main{
-    display: flex;
-    flex-direction: row;
-}
-
-.card__image{
-    /* align-items: center;
-    justify-content: center; */
-    max-width: 100%;
-}
-
-
-
-/*TAbla*/
-
-.tabla-clasificacion {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-}
-
-.tabla-clasificacion th,
-.tabla-clasificacion td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-}
-
-.tabla-clasificacion th {
-  background-color: #f0f0f0;
-}
-
-.tabla-clasificacion tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
-
-.tabla-clasificacion tr:hover {
-  background-color: #e0e0e0;
-}
-
-
-
-/*CARDS tabla*/
-
-
-.podio-container{
-    max-width: 90%;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.podio {
-  display: flex;
-  flex-direction: row;
-}
-
-.tarjeta {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-}
-
-.tarjeta--primero {
-  background-color: #0600ef; /* Color de Red Bull */
-  color: #fff; /* Texto en color blanco */
-  margin-right: 20px;
-}
-
-.tarjeta--segundo {
-  background-color: #0600ef; /* Color de Red Bull */
-  color: #fff; /* Texto en color blanco */
-  margin-right: 20px;
-  margin-top: 30px;
-}
-
-.tarjeta--tercero {
-  background-color: #5b9f35; /* Color de Aston Martin */
-  color: #fff; /* Texto en color blanco */
-  margin-top: 60px;
-}
-
-
-/*Ventana Emergente*/
-
-/* Estilos para la ventana emergente */
-.ventana-emergente {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.contenido-ventana {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  pointer-events: auto;
-  width: 500px;
-  height: 300px;
-}
-
-/* Estilos para resaltar la tarjeta activa */
-.tarjeta--activo {
-  background-color: yellow;
-}
-

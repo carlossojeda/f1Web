@@ -1,169 +1,101 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/style.css">
+    <title>F1</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container--img">
-            <img class="header__img" src="/src/logo.png" alt="">
+    <nav class="nav">
+        <div class="nav__cel">
+            <img class="boton__menu" src="/src/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            <img src="/src/F1.svg" alt="">
         </div>
-        <h1 class="header__title"><span class="span__title--f1">F1</span>Season 2023</h1>
-
-        <nav class="header__nav">
-            <a class="activo" href="/index.html">Inicio</a>
+        <div class="nav__container">
+            <a href="#">Inicio</a>
             <a href="#">Calendario</a>
-            <a href="/posiciones.html">Posiciones</a>
-        </nav>
-    </header>
+            <a href="#">Posiciones</a>
+        </div>
+    </nav>
 
     <main class="main">
-        <h2 class="main__h2"><span class="span__title--f1">Proximas </span>Carreras</h2>
-        <br>
-        <div class="container__card">
-            <div class="card">
-                <div class="card__title">
-                    <h2>Belgarian Gran Prix</h2>
-                    <img class="card__img" src="/src/Belgium-track-55.png" alt="">
-                </div>
-                <div class="card__text">
-                    <p>Practica 1: 28 de julio <br><span class="span__title--f1">Hora: </span>5:30</p>
-                    <p>Qualy: 28 de julio <br>
-                        <span class="span__title--f1">Hora:</span> 9:00</p>
-                        <p>Sprint: 29 de julio <br>
-                        <span class="span__title--f1">Hora:</span> 8:30</p>
-                        <p class="raceday">Carrera: 30 de julio <br>
-                        <span class="span__title--f1">Hora:</span> 7:00</p>
-                </div>
-                <div class="card__text--lastWinner">
-                    <p>Ultimo Ganador: Max Verstappen</p>
-                </div>
+        <div class="main__container">
+            <h2 class="main__h2">Proximas Carreras</h2>
+            <!-- <img class="main__img" src="/src/bg__blur.jpeg" alt=""> -->
+            <div class="bg">
+
+            
+            <div class="main__card">
+                <p class="circuito-font">Circuito de Barein</p>
+                <img class="card__img" src="/src/Belgium-track-55.png" alt="">
+                <p class="horario-font">Horarios</p>
+                    <div class="main__card_horarios">
+                        <div class="main__card_horarios-grid">
+                            <div class="main__card__flex1">
+                                <p class="evento--font">Practica 1:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+
+                            <div class="main__card__flex2">
+                                <p class="evento--font">Practica 2:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex3">
+                                <p class="evento--font">Practica 3:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex4">
+                                <p class="evento--font">Qualy:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex5">
+                                <p class="evento--font">Carrera:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
-            <div class="card">
-                <div class="card__title">
-                    <h2>Dutch Grand Prix</h2>
-                    <img class="card__img" src="/src/dutch.png" alt="">
-                </div>
-                <div class="card__text">
-                    <p>Practica 1: 25 de agosto <br><span class="span__title--f1">Hora:</span> 4:30 </p>
-                    <p>Practica 2: 25 de agosto <br>
-                        <span class="span__title--f1">Hora:</span> 8:00 </p>
-                    <p>Practica 3: 26 de agosto <br>
-                        <span class="span__title--f1">Hora:</span> 3:30 </p>
-                  <p>Qualy: 26 de agosto <br><span class="span__title--f1">Hora:</span> 7:00 </p>
-                        <p class="raceday">Carrera: 27 de agosto <br>
-                            <span class="span__title--f1">Hora:</span> 7:00 </p>
-                </div>
-                <div class="card__text--lastWinner">
-                    <p>Ultimo Ganador: Max Verstappen</p>
-                </div>
-            </div>
+            <div class="bg1">
 
-            <div class="card">
-                <div class="card__title">
-                    <h2>Italian Grand Prix</h2>
-                    <img class="card__img" src="/src/Italy-track-56.png" alt="">
-                </div>
-                <div class="card__text">
-                    <p>Practica 1: 1 de septiembre <br><span class="span__title--f1">Hora: </span> 5:30</p>
-                    <p>Practica 2: 1 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 9:30 </p>
-                    <p>Practica 3: 2 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 4:30 </p>
-                    <p>Qualy: 2 de septiembre <br><span class="span__title--f1">Hora: </span>8:00</p>
-                    <p class="raceday">Carrera: 3 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 7:00 </p>
-                </div>
-                <div class="card__text--lastWinner">
-                    <p>Ultimo Ganador: Max Verstappen</p>
-                </div>
-            </div>
+              <div class="main__card">
+                <p class="circuito-font">Circuito de Barein</p>
+                <img class="card__img" src="/src/Belgium-track-55.png" alt="">
+                <p class="horario-font">Horarios</p>
+                    <div class="main__card_horarios">
+                        <div class="main__card_horarios-grid">
+                            <div class="main__card__flex1">
+                                <p class="evento--font">Practica 1:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
 
-            <div class="card">
-                <div class="card__title">
-                    <h2>Singapore Grand Prix</h2>
-                    <img class="card__img" src="/src/yasmarina.png" alt="">
-                </div>
-                <div class="card__text">
-                    <p>Practica 1: 15 de septiembre<br><span class="span__title--f1">Hora: </span>3:30</p>
-                    <p>Practica 2: 15 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 7:00 </p>
-                    <p>Practica 3: 16 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 3:30 </p>
-                  <p>Qualy: 16 de septiembre <br><span class="span__title--f1">Hora: </span>7:00</p>
-                        <p class="raceday">Carrera: 17 de septiembre <br>
-                            <span class="span__title--f1">Hora:</span> 6:00 </p>
-                </div>
-                <div class="card__text--lastWinner">
-                    <p>Ultimo Ganador: Checo Perez</p>
-                </div>
+                            <div class="main__card__flex2">
+                                <p class="evento--font">Practica 2:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex3">
+                                <p class="evento--font">Practica 3:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex4">
+                                <p class="evento--font">Qualy:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex5">
+                                <p class="evento--font">Carrera:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
-
-            <div class="card">
-                <div class="card__title">
-                    <h2>Japanese Grand Prix</h2>
-                    <img class="card__img" src="/src/Japan-track-59.png" alt="">
-                </div>
-                <div class="card__text">
-                    <p>Practica 1: 21 de septiembre <br><span class="span__title--f1">Hora: </span>20:30</p>
-                    <p>Practica 2: 22 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 00:00 </p>
-                    <p>Practica 3: 22 de septiembre <br>
-                        <span class="span__title--f1">Hora:</span> 20:30 </p>
-                  <p>Qualy: 23 de septiembre <br><span class="span__title--f1">Hora: </span>00:00</p>
-                        <p class="raceday">Carrera: 23 de septiembre <br>
-                            <span class="span__title--f1">Hora:</span>  23:00</p>
-                </div>
-                <div class="card__text--lastWinner">
-                    <p>Ultimo Ganador: Max Verstappen</p>
-                </div>
+        </div>
             </div>
-         </div>
-
+        </div>
     </main>
-
-<section>
-    <main class="main">
-      <h2 class="main__h2">Podio Actual</h2>
-        <div class="podio-container">
-
-        <div class="podio">
-            <div class="tarjeta tarjeta--segundo" id="tarjeta-segundo" data-piloto="Red Bull">
-                <h3>Segundo Lugar</h3>
-                <p>Nombre del Piloto</p>
-                <p>2do</p>
-            </div>
-            <div class="tarjeta tarjeta--primero" id="tarjeta-primero" data-piloto="Red Bull">
-                <h3>Primer Lugar</h3>
-                <p>Nombre del Piloto</>
-                <p>1ro</p>
-            </div>
-            <div class="tarjeta tarjeta--tercero" id="tarjeta-tercero" data-piloto="Aston Martin">
-                <h3>Tercer Lugar</h3>
-                <p>Nombre del Piloto</p>
-                <p>3ro</p>
-            </div>
-            </div>
-        </div> 
-    </main> 
-
-    <!-- Ventana emergente (oculta por defecto) -->
-        <div class="ventana-emergente"> 
-      <div class="contenido-ventana">
-        <h4 class="nombre-piloto"></h4>
-        <ul class="carreras-ganadas"></ul>
-      </div>
-    </div>
-  </section>
-
-
-    <footer>
-    <h2>Hola</h2>
-    </footer>
-    <script src="/script.js"></script>
 </body>
 </html>
