@@ -11,56 +11,70 @@
     <title>F1</title>
 </head>
 <body>
+
+    <!-- crea el header  a partir de 786px  -->
     <nav class="nav">
+        <div class="nav__contenedor_elementos">
+        <a href="index.html"><img src="/src/F1.svg" alt="logo Formula Uno"></a>
+       
+        </div>
+
+    <!-- navegacion de movil // header -->
         <div class="nav__cel">
             <img class="boton__menu" src="/src/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             <img src="/src/F1.svg" alt="">
         </div>
+
+        <!-- navegación 768px -->
         <div class="nav__container">
-            <a href="#">Inicio</a>
-            <a href="#">Calendario</a>
-            <a href="#">Posiciones</a>
+            <a class="float-element" href="/index.html">Inicio</a>
+            <a class="float-element" href="/calendario.html">Calendario</a>
+            <a class="float-element" href="#">Posiciones</a>  
         </div>
-    </nav>
+     </nav> <!--termina el nav -->
+
+
+<!-- main -->
 
     <main class="main">
         <div class="main__container">
             <h2 class="main__h2">Proximas Carreras</h2>
-            <!-- <img class="main__img" src="/src/bg__blur.jpeg" alt=""> -->
+
+        <div class="main__container_content">
+
             <div class="bg">
+                <div class="main__card">
+                    <p class="circuito-font">Circuito de Barein</p>
+                    <img class="card__img" src="/src/Belgium-track-55.png" alt="">
+                    <p class="horario-font">Horarios</p>
+                        <div class="main__card_horarios">
+                            <div class="main__card_horarios-grid">
+                                <div class="main__card__flex1">
+                                    <p class="evento--font">Practica 1:</p>
+                                    <p class="horario--color">3:00pm</p>
+                                </div>
 
-            
-            <div class="main__card">
-                <p class="circuito-font">Circuito de Barein</p>
-                <img class="card__img" src="/src/Belgium-track-55.png" alt="">
-                <p class="horario-font">Horarios</p>
-                    <div class="main__card_horarios">
-                        <div class="main__card_horarios-grid">
-                            <div class="main__card__flex1">
-                                <p class="evento--font">Practica 1:</p>
-                                <p class="horario--color">3:00pm</p>
-                            </div>
-
-                            <div class="main__card__flex2">
-                                <p class="evento--font">Practica 2:</p>
-                                <p class="horario--color">3:00pm</p>
-                            </div>
-                            <div class="main__card__flex3">
-                                <p class="evento--font">Practica 3:</p>
-                                <p class="horario--color">3:00pm</p>
-                            </div>
-                            <div class="main__card__flex4">
-                                <p class="evento--font">Qualy:</p>
-                                <p class="horario--color">3:00pm</p>
-                            </div>
-                            <div class="main__card__flex5">
-                                <p class="evento--font">Carrera:</p>
-                                <p class="horario--color">3:00pm</p>
+                                <div class="main__card__flex2">
+                                    <p class="evento--font">Practica 2:</p>
+                                    <p class="horario--color">3:00pm</p>
+                                </div>
+                                <div class="main__card__flex3">
+                                    <p class="evento--font">Practica 3:</p>
+                                    <p class="horario--color">3:00pm</p>
+                                </div>
+                                <div class="main__card__flex4">
+                                    <p class="evento--font">Qualy:</p>
+                                    <p class="horario--color">3:00pm</p>
+                                </div>
+                                <div class="main__card__flex5">
+                                    <p class="evento--font">Carrera:</p>
+                                    <p class="horario--color">3:00pm</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                </div>
             </div>
-
+        
             <div class="bg1">
 
               <div class="main__card">
@@ -94,8 +108,84 @@
                     </div>
             </div>
         </div>
+         </div>
+
+
+         <div class="main__container_2">
+        <div class="bg2">
+
+              <div class="main__card fade-in">
+                <p class="circuito-font">Circuito de Barein</p>
+                <img class="card__img" src="/src/Belgium-track-55.png" alt="">
+                <p class="horario-font">Horarios</p>
+                    <div class="main__card_horarios">
+                        <div class="main__card_horarios-grid">
+                            <div class="main__card__flex1">
+                                <p class="evento--font">Practica 1:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+
+                            <div class="main__card__flex2">
+                                <p class="evento--font">Practica 2:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex3">
+                                <p class="evento--font">Practica 3:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex4">
+                                <p class="evento--font">Qualy:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex5">
+                                <p class="evento--font">Carrera:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
+
+                <div class="bg2">
+
+              <div class="main__card">
+                <p class="circuito-font">Circuito de Barein</p>
+                <img class="card__img" src="/src/Belgium-track-55.png" alt="">
+                <p class="horario-font">Horarios</p>
+                    <div class="main__card_horarios">
+                        <div class="main__card_horarios-grid">
+                            <div class="main__card__flex1">
+                                <p class="evento--font">Practica 1:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+
+                            <div class="main__card__flex2">
+                                <p class="evento--font">Practica 2:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex3">
+                                <p class="evento--font">Practica 3:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex4">
+                                <p class="evento--font">Qualy:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                            <div class="main__card__flex5">
+                                <p class="evento--font">Carrera:</p>
+                                <p class="horario--color">3:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+</div>
+       
+        </div>
     </main>
+
+    <!-- <script src="/script.js"></script> -->
 </body>
 </html>

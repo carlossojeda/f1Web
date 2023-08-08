@@ -1,42 +1,91 @@
+/*GLOABLES*/
+
 html{
     box-sizing: border-box;
 }
 *, *:before, *:after{
     box-sizing: inherit;
 }
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --fuente700: 700;
+    --fuente800: 800; 
+}
 
 
 /*NAV*/
 
+.nav a{
+    text-decoration: none;
+}
+
+/*NAV Movil*/
 .nav__cel{
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-evenly;
+    justify-content:space-between;
     text-align: center;
     align-items: center;
-    padding: .5rem;
+    padding: 1.8rem;
     background-color: #e9e9e9;
     height: 55px;
 }
-.boton__menu{
-    margin-left: 8rem;
+
+.nav__contenedor_elementos{
+    display: none;
 }
 
 .nav__container{
     display: none;
-}
-@media (min-width: 768px) {
-    .nav__container{
-        background-color: aqua;
+} 
+
+
+/*NAV mq*/
+
+@media (min-width: 1168px) {
+    .nav{
         max-width: 100%;
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 3rem;
+        align-items: center;
     }
+    .nav__container {
+        background-color: #ffffff;
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+    .nav__container a{
+    font-weight: var(--fuente700);
+    font-size: 50px;
+    color: #871414;
+    margin: 1rem;
+
+}
     .nav__cel{
         display: none;
     }
+    .nav__contenedor_elementos{
+        display: block;
+    }
+}
+.nav__container{
+    padding: 2rem;
+}
+
+
+/*FLOAT*/
+.float-element {
+  text-align: center;
+  font-size: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.float-element:hover {
+  transform: translateX(0px) translateY(-10px) scale(1.1);
 }
 
 
@@ -44,21 +93,12 @@ html{
 
 /*BACKGROUND*/
 
-.main__img{
-    /* max-width: 606px; */
-    max-width: 100%;
-    height: 949px;
-    position: relative;
-
-}
 
 main h2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
+    font-weight: var(--fuente800);
     text-align: center;
     justify-content: center;
     align-items: center;
-    align-content: center;
     margin: 0;
     padding: 2rem;
     background-color: #d1d1d1;
@@ -69,12 +109,6 @@ main h2{
 
 
 }
-.main__h2 {
-    text-align: center;
-    max-height: 100%;
-    
-}
-
 
 /*CARD*/
 
@@ -84,6 +118,7 @@ main h2{
     background-image: url(/src/bg__blur.jpeg);
     padding: .8rem;
     background-size: cover;
+    background-position: center;
 }
 
 .bg1{
@@ -92,19 +127,65 @@ main h2{
     background-image: url(/src/R-modified.jpeg);
     padding: .8rem;
     background-size: cover;
+    background-position: center;
+}
+.bg2{
+    height: 666;
+    width: 430;
+    background-image: url(/src/OIP-modified.jpeg);
+    padding: .8rem;
+    background-size: cover;
+    background-position: center;
+}
+.bg3{
+    height: 666;
+    width: 430;
+    background-image: url(/src/suzuka-cover-modified.jpeg);
+    padding: .8rem;
+    background-size: cover;
+    background-position: center;
 }
 
 
 
 .main__card{
     text-align: center;
-    max-width: 100%;
-    height: 625px;
     border: 4px solid black;
     padding: 1rem;
     border-radius: 15px;
     background-color: rgba(254, 251, 251, 40%); 
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .main__container_content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-image: url(/src/bg__blur.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bg{
+        display: flex;
+        flex-direction: row;
+        background-image: none;
+    }
+    .bg1{
+        background-image: none;
+    }
+    .bg2{
+        background-image: none;
+    }
+    .bg3{
+        background-image: none;
+    }
+    .main__container_2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-image: url(/src/OIP-modified.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 .card__img{
     max-width: 100%;
@@ -124,24 +205,32 @@ main h2{
 
 
 .circuito-font{
-    font-family: 'Inter', 'sans serif';
-    font-weight: 800;
+    font-weight: var(--fuente800);
     font-size: 24px;
 }
 
 .horario-font{
-    font-family: 'Inter', 'sans serif';
-    font-weight: 800;
+    font-weight: var(--fuente800);
     font-size: 24px;
 
 }
 .evento--font{
-    font-family: 'Inter', 'sans serif';
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--fuente700);
 }
 .horario--color{
     color: #ffffff;
-    font-family: 'Inter', 'sans serif';
-    font-weight: 700;
+    font-weight: var(--fuente700);
+}
+
+@media (min-width: 1000px) {
+    .main__card{
+    max-width: 80%;
+    margin-left: 4rem;
+    border: 4px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgba(254, 251, 251, 40%); 
+    margin-bottom: 2rem;
+}
 }
