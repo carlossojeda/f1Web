@@ -33,7 +33,49 @@ html{
     background-color: #e9e9e9;
     height: 55px;
 }
+.nav__cel_elementos{
+    background-color: #871414;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: end;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+.nav__cel_elementos a{
+    color: #d1d1d1;
+    font-size: 25px;
+    font-weight: var(--fuente700);
 
+}
+
+.boton__menu, .cerrar-menu{
+    cursor: pointer;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: #871414;
+}
+.cerrar-menu{
+    color: #ffe500;
+    font-size: 2rem;
+}
+.boton__menu{
+    font-size: 3rem;
+
+}
+
+.nav__cel_elementos.visible{
+    opacity: 1;
+    visibility: visible;
+}
 .nav__contenedor_elementos{
     display: none;
 }
