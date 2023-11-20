@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chart.js": "^4.4.0",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
     "gulp-cache": "^1.1.3",

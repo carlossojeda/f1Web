@@ -1,0 +1,26 @@
+const pilotos = {
+    max: 'Max Verstappen',
+    checo: 'Sergio Pérez',
+    hamilton: 'Lewis Hamilton',
+    alonso: 'Fernando Alonso',
+    lando: 'Lando Norris',
+    sainz: 'Carlos Sainz',
+    charles: 'Charles Leclerc',
+    russell: 'George Russell',
+    piastri: 'Oscar Piastri',
+    stroll: 'Lance Stroll',
+    gasly: 'Pierre Gasly',
+    ocon: 'Esteban Ocon',
+    albon: 'Alexander Albon',
+    yuki: 'Yuki Tsunoda',
+    bottas: 'Valtteri Bottas',
+    hulkenberg: 'Nico Hulkenberg',
+    ricciardo: 'Daniel Ricciardo',
+    zhou: 'Guanyu Zhou',
+    magnussen: 'Kevin Magnussen',
+    lawson: 'Liam Lawson',
+    sargeant: 'Logan Sargeant',
+    nyck: 'Nyck De Vries',
+}
+
+export { pilotos };

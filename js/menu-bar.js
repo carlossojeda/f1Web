@@ -1,24 +1,26 @@
 
 /*MENU HMABURGUESA*/
 
-const nav = document.querySelector("#nav_cel");
+const nav = document.querySelector("#header__nav");
 const abrir = document.querySelector("#abrir_cel");
-const cerrar = document.querySelector('#cerrar_menu');
+const cerrar = document.querySelector('#cerrar__menu');
 
 
 abrir.addEventListener('click', () => {
-  nav_cel.classList.add('visible');
+  nav.classList.remove('oculto');
+  console.log('hola');
 })
 
-cerrar.addEventListener('click', ()=> {
-  nav_cel.classList.remove('visible');
+cerrar.addEventListener('click', () => {
+  console.log('hola x');
+  nav.classList.add('oculto');
 })
 
 // Agrega un evento de clic al documento para cerrar el menú cuando se haga clic fuera de él
 document.addEventListener('click', (event) => {
     const target = event.target;
     if (!nav.contains(target) && target !== abrir) {
-        nav.classList.remove('visible');
+        nav.classList.add('oculto');
     }
 });
 
