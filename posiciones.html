@@ -11,37 +11,57 @@
     <title>Pagina Inicio</title>
 </head>
 <body>
-    <header>
- <nav class="nav">
-        <div class="nav__contenedor_elementos">
-        <a href="index.html"><img src="/src/img/F1.svg" alt="logo Formula Uno"></a>
-        </div>
 
-    <!-- navegacion de movil // header -->
-        <div class="nav__cel">
+    <header>
+        <div class="header__elements">
+            <a href="/index.html"><img src="/src/img/F1.svg" alt="Formula 1 Logo"> </a>
             <i class="bi bi-list boton__menu" id="abrir_cel"></i>
-            <a href="index.html"><img src="/src/img/F1.svg" alt="Logo Formula 1"></a>
-            <div class="nav__cel_elementos" id="nav_cel">
-                <i class="bi bi-x-lg cerrar-menu" id="cerrar_menu"></i>
+            <div id="header__nav" class="header__nav oculto">
+                <i class="bi bi-x-lg cerrar-menu" id="cerrar__menu"></i>
                 <a href="/index.html">Inicio</a>
-                <a href="/calendario.html">Calendario</a>
-                <a href="/posiciones.html">Posiciones</a>  
+                <a href="/posiciones.html">Posiciones</a>
             </div>
         </div>
+    </header>
 
-        <!-- navegación 768px -->
-        <div class="nav__container">
-            <a href="/index.html">Inicio</a>
-            <a href="/calendario.html">Calendario</a>
-            <a href="/posiciones.html">Posiciones</a>  
+
+    <section class="sectionPodium">
+        <h2>Campeonato de Pilotos 2024</h2>
+
+        <div class="chartsPodium">
+            <div class="firstPlaceChart chart">
+                <p id="firstPlace"></p>
+                <p id="points"></p>
+                <p id="escuderia"></p>
+                <img src="/src/img/red-bull-logo-0-1536x1432.png" alt="">
+                <div class="podiumPosition">
+                    <p>Primer Lugar</p>
+                </div>
+            </div>
+            <div class="secondPlaceChart chart">
+                <p id="secondPlace"></p>
+                <p id="pointsSecond"></p>
+                <p id="escuderiaSecond"></p>
+                <img src="/src/img/Aston-Martin-Logo-1200x900.png" alt="">
+                <div class="podiumPosition">
+                    <p>Segundo Lugar</p>
+                </div>
+            </div>
+            <div class="thirdPlaceChart chart">
+                <p id="thirdPlace"></p>
+                <p id="pointsThird"></p>
+                <p id="escuderiaThird"></p>
+                <img src="/src/img/Ferrari-Logo.png" alt="">
+                <div class="podiumPosition">
+                    <p>Tercer Lugar</p>
+                </div>
+            </div>
         </div>
-     </nav> <!--termina el nav -->
-
-
-   
+    </section>
 
 
      <main>
+        <h2></h2>
         <div class="chartCard">
             <div class="chartBox">
                 <canvas class="canvas" id="myChart"></canvas>
@@ -54,4 +74,5 @@
 <script type="module" src="/js/pilotos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="module" src="/js/chart.js"></script>
+<script type="module" src="/js/drivers.js"></script>
 </html>

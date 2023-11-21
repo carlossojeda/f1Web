@@ -379,9 +379,10 @@ img {
   right: 0;
   bottom: 0;
   gap: 2rem;
+  width: 120px;
   background-color: #be0a0a;
   position: absolute;
-  padding: 1.8rem;
+  padding: 2rem;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -391,8 +392,17 @@ img {
 }
 .header__elements a {
   color: white;
+  font-size: 20px;
 }
 
+@media (min-width: 768px) {
+  .header__nav {
+    min-width: 180px;
+  }
+  a {
+    font-size: 29px;
+  }
+}
 @media (min-width: 992px) {
   .header__elements {
     padding: 0;
@@ -404,6 +414,7 @@ img {
     background-color: inherit;
     box-shadow: none;
     font-size: 50px;
+    width: auto;
   }
   .header__elements .header__nav .oculto {
     display: block;
@@ -411,6 +422,7 @@ img {
   .header__elements .header__nav a {
     color: #871414;
     margin: 0 3rem;
+    font-size: 50px;
   }
   i#abrir_cel, i#cerrar__menu {
     display: none;
@@ -488,15 +500,15 @@ img {
     align-items: center;
   }
   .map {
-    margin: 2rem;
-    padding: 2rem;
+    margin: 1.5rem;
     max-width: 80%;
-    margin-left: 5rem;
   }
 }
 @media (min-width: 992px) {
   .map {
     margin-left: 10rem;
+    width: 600px;
+    height: 500px;
   }
 }
 .circuitName {
@@ -753,6 +765,76 @@ p #text {
     flex-direction: row;
   }
 }
+.sectionPodium {
+  text-align: center;
+  color: rgb(255, 255, 87);
+}
+.sectionPodium h2 {
+  padding: 1.5rem;
+  background-color: gray;
+}
+.sectionPodium .chartsPodium {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 80%;
+  margin: 0 auto;
+  gap: 0.6rem;
+}
+.sectionPodium .chartsPodium .firstPlaceChart, .sectionPodium .chartsPodium .secondPlaceChart, .sectionPodium .chartsPodium .thirdPlaceChart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.sectionPodium .chartsPodium .firstPlaceChart img, .sectionPodium .chartsPodium .secondPlaceChart img, .sectionPodium .chartsPodium .thirdPlaceChart img {
+  margin: 0 auto 2rem;
+}
+.sectionPodium .chartsPodium .firstPlaceChart p, .sectionPodium .chartsPodium .secondPlaceChart p, .sectionPodium .chartsPodium .thirdPlaceChart p {
+  font-size: 16px;
+  color: white;
+}
+.sectionPodium .chartsPodium .firstPlaceChart .podiumPosition, .sectionPodium .chartsPodium .secondPlaceChart .podiumPosition, .sectionPodium .chartsPodium .thirdPlaceChart .podiumPosition {
+  background-color: rgb(220, 220, 220);
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+}
+.sectionPodium .chartsPodium .firstPlaceChart .podiumPosition p, .sectionPodium .chartsPodium .secondPlaceChart .podiumPosition p, .sectionPodium .chartsPodium .thirdPlaceChart .podiumPosition p {
+  margin: 0 auto;
+  color: rgb(40, 14, 2);
+  text-align: center;
+  align-items: center;
+}
+.sectionPodium .chartsPodium .firstPlaceChart {
+  background-color: rgba(0, 0, 250, 0.8);
+  order: 2;
+  height: 400px;
+}
+.sectionPodium .chartsPodium .firstPlaceChart img {
+  width: 200px;
+  height: 100px;
+}
+.sectionPodium .chartsPodium .secondPlaceChart {
+  background-color: blue;
+  order: 1;
+  height: 370px;
+}
+.sectionPodium .chartsPodium .thirdPlaceChart {
+  background-color: red;
+  order: 3;
+}
+.sectionPodium .chartsPodium .thirdPlaceChart img {
+  width: 200px;
+  height: 50px;
+}
+.sectionPodium .chartsPodium .chart {
+  padding: 1.6rem;
+}
+
 .chartCard {
   width: 100%;
   height: 600px;
