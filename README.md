@@ -1,17 +1,15 @@
 # SITIO WEB F1 #
 
------
 
 ## ¿Qué hace? ##
 
 Es bastante simple, su función es la de ser un Sitio Web el cuál mantendré actualizando cada fin de semana de carreras.
 
----
 
 ## NOVEDADES ##
 .- Ya incluye todo el calendario 2024.
 
----
+
 
 ## PROXIMAMENTE ##
 
